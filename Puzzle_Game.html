@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(Horse/bb.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-color: rgba(0, 0, 0, 0.707);
+                
+            }
+        </style>
+        <title>Puzzle Game</title>
+        <script src="puzz.js"></script>
+    
+    </head>
+
+    <body onload="randomArrangement()">
+        <br>
+        <h1 style="font-size: 60px; font-style: normal; text-align: center; color: rgb(239, 240, 242);font-family: Geneva, Tahoma, sans-serif; margin-top: 15px;" id="perfect">Solve the Puzzle</h1>
+        
+        <img src="Horse/space_puzz.jpg" value="Horse\ig1.jpg" alt="" width="400px" height="400px" style="position:absolute; top: 25%; left: 10%; z-index: 1;">
+        <br>
+        <button onclick="Check()" style="position: absolute; bottom: auto; border: solid rgb(245, 245, 245); color: rgb(251, 251, 251); margin-left: 240px; margin-top: 450px; border-width: 1px;background-color:transparent; font-size: larger; font-family: Geneva, Tahoma, sans-serif;padding: 15px;" ><b>SUBMIT PUZZLE</b></button>
+        <table cellspacing="0" align="right" style="margin-right: 300px; z-index: 1;">
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig1.jpg" value="Horse\ig1.jpg" alt="" height="100%" width="100%" id="b1" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig2.jpg" value="Horse\ig2.jpg" alt="" height="100%" width="100%" id="b2" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig3.jpg" value="Horse\ig3.jpg" alt="" height="100%" width="100%" id="b3" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig4.jpg" value="Horse\ig4.jpg" alt="" height="100%" width="100%" id="b4" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig5.jpg" value="Horse\ig5.jpg" alt="" height="100%" width="100%" id="b5" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig6.jpg" value="Horse\ig6.jpg" alt="" height="100%" width="100%" id="b6" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig7.jpg" value="Horse\ig7.jpg" alt="" height="100%" width="100%" id="b7" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig8.jpg" value="Horse\ig8.jpg" alt="" height="100%" width="100%" id="b8" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig9.jpg" value="Horse\ig9.jpg" alt="" height="100%" width="100%" id="b9" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig10.jpg" value="Horse\ig10.jpg" alt="" height="100%" width="100%" id="b10" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig11.jpg" value="Horse\ig11.jpg" alt="" height="100%" width="100%" id="b11" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig12.jpg" value="Horse\ig12.jpg" alt="" height="100%" width="100%" id="b12" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig13.jpg" value="Horse\ig13.jpg" alt="" height="100%" width="100%" id="b13" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig14.jpg" value="Horse\ig14.jpg" alt="" height="100%" width="100%" id="b14" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig15.jpg" value="Horse\ig15.jpg" alt="" height="100%" width="100%" id="b15" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig16.jpg" value="Horse\ig16.jpg" alt="" height="100%" width="100%" id="b16" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig17.jpg" value="Horse\ig17.jpg" alt="" height="100%" width="100%" id="b17" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig18.jpg" value="Horse\ig18.jpg" alt="" height="100%" width="100%" id="b18" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig19.jpg" value="Horse\ig19.jpg" alt="" height="100%" width="100%" id="b19" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig20.jpg" value="Horse\ig20.jpg" alt="" height="100%" width="100%" id="b20" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig21.jpg" value="Horse\ig21.jpg" alt="" height="100%" width="100%" id="b21" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig22.jpg" value="Horse\ig22.jpg" alt="" height="100%" width="100%" id="b22" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig23.jpg" value="Horse\ig23.jpg" alt="" height="100%" width="100%" id="b23" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig24.jpg" value="Horse\ig24.jpg" alt="" height="100%" width="100%" id="b24" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig25.jpg" value="Horse\ig25.jpg" alt="" height="100%" width="100%" id="b25" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig26.jpg" value="Horse\ig26.jpg" alt="" height="100%" width="100%" id="b26" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig27.jpg" value="Horse\ig27.jpg" alt="" height="100%" width="100%" id="b27" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig28.jpg" value="Horse\ig28.jpg" alt="" height="100%" width="100%" id="b28" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig29.jpg" value="Horse\ig29.jpg" alt="" height="100%" width="100%" id="b29" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig30.jpg" value="Horse\ig30.jpg" alt="" height="100%" width="100%" id="b30" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig31.jpg" value="Horse\ig31.jpg" alt="" height="100%" width="100%" id="b31" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig32.jpg" value="Horse\ig32.jpg" alt="" height="100%" width="100%" id="b32" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig33.jpg" value="Horse\ig33.jpg" alt="" height="100%" width="100%" id="b33" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig34.jpg" value="Horse\ig34.jpg" alt="" height="100%" width="100%" id="b34" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig35.jpg" value="Horse\ig35.jpg" alt="" height="100%" width="100%" id="b35" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig36.jpg" value="Horse\ig36.jpg" alt="" height="100%" width="100%" id="b36" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig37.jpg" value="Horse\ig37.jpg" alt="" height="100%" width="100%" id="b37" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig38.jpg" value="Horse\ig38.jpg" alt="" height="100%" width="100%" id="b38" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig39.jpg" value="Horse\ig39.jpg" alt="" height="100%" width="100%" id="b39" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig40.jpg" value="Horse\ig40.jpg" alt="" height="100%" width="100%" id="b40" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig41.jpg" value="Horse\ig41.jpg" alt="" height="100%" width="100%" id="b41" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig42.jpg" value="Horse\ig42.jpg" alt="" height="100%" width="100%" id="b42" onclick="selected(this)" ></div></td>
+            </tr>
+            <tr>
+                <td id="td1"> <div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig43.jpg" value="Horse\ig43.jpg" alt="" height="100%" width="100%" id="b43" onclick="selected(this)" ></div></td>
+                <td id="td2"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig44.jpg" value="Horse\ig44.jpg" alt="" height="100%" width="100%" id="b44" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig45.jpg" value="Horse\ig45.jpg" alt="" height="100%" width="100%" id="b45" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig46.jpg" value="Horse\ig46.jpg" alt="" height="100%" width="100%" id="b46" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig47.jpg" value="Horse\ig47.jpg" alt="" height="100%" width="100%" id="b47" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig48.jpg" value="Horse\ig48.jpg" alt="" height="100%" width="100%" id="b48" onclick="selected(this)" ></div></td>
+                <td id="td3"><div style="border: 1px solid black; height: 75px; width: 75px;" >
+                    <img src="Horse\ig49.jpg" value="Horse\ig49.jpg" alt="" height="100%" width="100%" id="b49" onclick="selected(this)" ></div></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
